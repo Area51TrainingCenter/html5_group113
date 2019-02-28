@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Esta web trata sobre la segtunda clase del curso de html5">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name="author" content="Alonso Perez">
+	<title>Mi primera web</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<a href="index.html"><img src="img/logo.png" id="logo"></a>
+		<nav>
+			<a href="#inicio">Inicio</a>
+			<a href="#nuevamusica">Nueva música</a>
+			<a href="#galeria">Galeria</a>
+			<a href="#planes">Planes</a>
+			<a href="#escribenos">Escribenos</a>
+		</nav>
+	</header>
+	<main>
+		<section id="inicio">
+			<img src="img/imagen1.jpg" title="ESta foto es de salim" alt="salim vera"  id="banner">
+		</section>
+		<section id="nuevamusica">
+			<div>
+				<h2>Nueva musica</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<ul type="circle">
+					<li>Rock</li>
+					<li>Pop</li>
+					<li>Hip hop</li>
+					<li>Salsa</li>
+				</ul>	
+				<ol type="I">
+					<li>Rock</li>
+					<li>Pop</li>
+					<li>Hip hop</li>
+					<li>Salsa</li>
+				</ol>	
+				<figure>
+					<img src="img/rock.jpg" id="concierto">
+					<figcaption>El copcnierto de salim empezo 30 minutos tarde</figcaption>
+				</figure>							
+			</div>
+		</section>	
+		<section id="galeria">
+			<div>
+				
+			</div>
+		</section>	
+		<section id="planes">
+			<div>
+				<table bgcolor="#fff" border="0" width="100%" >
+					<tr bgcolor="green">
+						<th></th>
+						<th width="10%" height="25" bgcolor="red" style="color:#fff" >id</th>
+						<th width="50%" colspan="2" >nombre e email</th>						
+						<th width="" bgcolor="red">telefono</th>						
+					</tr>
+					<tr>
+						<th bgcolor="red" rowspan="2">1</th>
+						<td align="left" valign="top" height="100">alonso</td>
+						<td align="right" valign="bottom">nuevocorreo17@gmail.com</td>						
+						<td align="center"  valign="middle">123456789</td>	
+						<td></td>					
+					</tr>	
+					<tr>
+						<td>kristina</td>
+						<td>kristina@gmail.com</td>					
+						<td>923456789</td>	
+						<td>
+						<!--	<table border="1" width="100%">
+								<tr>
+									<td>hola</td>
+									<td>hola</td>
+									<td>hola</td>
+									<td>hola</td>
+								</tr>
+								<tr>
+									<td>hola</td>
+									<td>hola</td>
+									<td>hola</td>
+									<td>hola</td>
+								</tr>								
+							</table>
+						-->
+						</td>										
+					</tr>										
+				</table>
+			</div>
+		</section>			
+		<section id="escribenos">
+			<div>
+				<form action="guardar.php" id="frmcontacto" method="POST">
+					<div>
+						<input type="hidden" name="tipoformualrio" value="escribenos" >
+					</div>		
+					<div>
+						<input type="text" name="dni" required 
+					id="nombre" placeholder="DNI" size="8" maxlength="8"  >
+					</div>								
+					<div>
+						<input type="text" name="nombre" readonly required 
+					id="nombre" placeholder="Nombre" >
+					</div>
+					<div>
+						<input type="password" name="password" id="password" placeholder="Password">
+					</div>
+					<div>					
+						<input type="color" name="color" id="color" >
+					</div>
+					<div>					
+						<input type="date" max="1979-12-31" name="fecha" id="fecha" >
+					</div>
+					<div>					
+ 						<input type="datetime-local" name="bdaytime">
+					</div>
+					<div> 					
+ 						<input type="email" name="emaio" id="email">
+					</div>
+					<div>
+						<input type="month" name="mes">
+					</div>
+					<div>
+						<input type="week" name="semana">
+					</div>
+					<div>
+						<input type="number" name="numero">
+					</div>	
+					<div>
+						<input type="range" name="rango" min="0" max="20">
+					</div>	
+					<div>
+						<input type="time" name="hora" >
+					</div>												
+					<div>
+						<input type="url" name="url" >
+					</div>	
+					<div>
+						<textarea id="mensaje" name="mensaje" rows="50" cols="50"></textarea>
+					</div>			
+					<div> 					
+						<input type="submit" name="boton" value="ENVIAR">
+						<input type="reset" name="limpiar" value="Limpiar">
+					</div>
+				</form>
+			</div>
+		</section>				
+	</main>
+	<footer>Derechos reservados @2019 - Mi primera web</footer>
+</body>
+</html>

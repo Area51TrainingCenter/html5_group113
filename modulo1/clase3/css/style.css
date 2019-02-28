@@ -1,0 +1,40 @@
+*{
+
+}
+
+body
+{
+	font-family: 'Roboto';
+	font-weight: 400;
+}
+
+a{
+	color: green;
+}
+
+h2
+{
+	font-size: 30px;
+	text-transform: uppercase;
+	/*lowercase: minusculas | capitaliza: Primera letra de la palabra enb mayusculas*/
+}
+
+p{
+
+}
+
+table tr td
+{
+	padding: 15px;
+}
+
+#logo
+{
+	width: 100px;
+
+}
+
+#banner,#concierto
+{
+	width: 100%;
+}
