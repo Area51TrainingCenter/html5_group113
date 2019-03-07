@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Esta web trata sobre la segtunda clase del curso de html5">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name="author" content="Alonso Perez">
+	<title>Mi primera web</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" ref="">
+</head>
+<body>
+	<header>
+		<a href="index.html"><img src="img/logo.png" id="logo"></a>
+		<nav>
+			<a href="#inicio">Inicio</a>
+			<a href="#nuevamusica">Nueva música</a>
+			<a href="#galeria">Galeria</a>
+			<a href="#planes">Planes</a>
+			<a href="#escribenos">Escribenos</a>
+		</nav>
+	</header>
+	<main>
+		<section id="inicio">
+			<img src="img/imagen1.jpg" title="ESta foto es de salim" alt="salim vera"  id="banner">
+			<h1>MUSICA PARA TODOS</h1>
+		</section>
+		<section id="video">
+			<video width="600" height="400" loop autoplay  muted  >
+				<source src="video/video.mp4" type="video/mp4">
+				<source src="video/video.webm" type="video/webm">	
+				<source src="video/video.ogv" type="video/ogv">							
+			</video>
+			<h2>MUSICA PARA TODOS</h2>
+		</section>
+		<section id="nuevamusica">
+			<div class="container">
+				<div class="row">
+					<div class="columna columna-100">
+						<h2>Nueva musica</h2>
+						<time datetime="2019-03-04">04 marzo del 2019</time>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</p>
+						<blockquote>
+							"Alonso hoy no ire a clases, estoy mal"
+						</blockquote>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						<mark>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea   commodo</mark>
+						consequat.</p>
+						<cite>
+							Libro clases de programacion con Alonso
+						</cite>
+					<!--	<pre>Duis aute irure dolor in reprehenderit in voluptate velit esse	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</pre> -->
+					<pre>
+						<code>
+							
+							&lt;html&gt;
+							&lt;head&gt;
+								&lt;title&gt;&lt;/title&gt;
+							&lt;/head&gt;
+							&lt;body&gt;
+							
+							&lt;/body&gt;
+							&lt;/html&gt;
+						</code>
+					</pre>
+					<dl>
+						<dt>Coffee</dt>
+						<dd>Black hot drink</dd>
+						<dt>Milk</dt>
+						<dd>White cold drink</dd>
+					</dl>
+						<figure>
+						<img src="img/rock.jpg" id="concierto">
+						<figcaption>El copcnierto de salim empezo 30 minutos tarde</figcaption>
+						</figure>		
+					</div>
+				</div>
+								
+			</div>
+		</section>	
+		<section id="galeria">
+			<div class="container">
+				
+			</div>
+		</section>	
+		<section id="planes">
+		<!--	<iframe width="560" height="315" src="" frameborder="0" name="iframe_a" ></iframe>
+			<a href="https://www.youtube.com/embed/LHkx2RYFjN8" target="iframe_a">HAz click aqui</a>-->
+
+			<iframe width="100%" height="315" src="https://www.youtube.com/embed/LHkx2RYFjN8" frameborder="0" name="iframe_a" ></iframe>
+		</section>	
+		<section>
+			<embed width="100%" height="500" src="doc/documento.pdf"></embed>
+			<a href="img/imagen1.jpg" download>Descargar aqui</a>
+		</section>	
+		<section id="multimedia">
+			<div class="container">
+				<div class="row">
+					<div class="columna columna-100">
+						<video width="600" height="400" controls loop  muted poster="img/imagen1.jpg" >
+							<source src="video/video.mp4" type="video/mp4">
+							<source src="video/video.webm" type="video/webm">	
+							<source src="video/video.ogv" type="video/ogv">							
+						</video>
+						<audio controls autoplay muted>
+							<source src="audio/audio.mp3" type="audio/mpeg">
+						</audio>
+					</div>
+				</div>
+			</div>
+		</section>	
+		<section id="escribenos">
+			<div class="container">
+				<form enctype="multipart/form-data" action="guardar.php" id="frmcontacto" method="POST">	
+					<fieldset>		
+						<legend>Datos Personales</legend>				
+						<div class="form-fila">
+							
+							
+								<input type="text" name="nombre" class="form-control" readonly required id="nombre" placeholder="Nombre" >
+							
+							
+						</div>
+						<div class="form-fila">
+							<input type="text" name="apellido"  class="form-control"  id="apellido" placeholder="Apellido">
+						</div>
+					</fieldset>
+					<div class="form-fila">				
+ 						<input type="email" name="email"  class="form-control"  id="email" placeholder="Email">
+					</div>
+					<div class="form-fila">
+						<select name="distritos1" id="distritos1"  class="form-control"  >
+							<option value="">-- Seleccione Distritos --</option>
+							<option value="1">Callao</option>
+							<option value="2">La victoria</option>
+							<option value="3">San Borja Norte</option>
+							<option value="4">San Borja Sur</option>
+							<option value="5">Surquillo</option>
+							<option value="6">Surco</option>
+							<option value="7">Villa Maria</option>
+						</select>
+					</div>				
+					<div class="form-fila">
+						<textarea id="mensaje" name="mensaje" rows="10" cols="50"  class="form-control" ></textarea>
+					</div>			
+					<div class="form-fila grupo-botones">				
+						<input type="submit" name="boton" value="ENVIAR">
+						<input type="reset" name="limpiar" value="LIMPIAR">
+					</div>
+				</form>
+			</div>
+		</section>				
+	</main>
+	<footer>Derechos reservados @2019 - Mi primera web</footer>
+</body>
+</html>
