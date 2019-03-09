@@ -1,0 +1,211 @@
+*{
+	box-sizing: border-box;
+}
+
+body
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+
+a{
+	text-decoration: none;
+	display: inline-block;
+}
+
+.container
+{
+	width: 1199px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+}
+
+.row
+{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.row-centrado
+{
+	text-align: center;
+}
+
+.columna
+{
+	padding-left:20px;
+	padding-right:20px;	
+	display: inline-block;
+    margin-left: -2px;
+    margin-right: -2px;
+	vertical-align: top;
+}
+
+.columna-100
+{
+	width: 100%;
+}
+
+.columna-25
+{
+	width: 25%;
+}
+
+.img-full
+{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.boton
+{
+	background-color: #1DB954;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 15px 30px;
+	border: none;
+}
+
+.cabeceraprincipal
+{
+	background-color: #000;	
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	top: 0;
+	left: 0;	
+}
+
+.cabeceraprincipal .logo
+{
+	margin-bottom: 10px;
+}
+
+.cabeceraprincipal .logo .brand
+{
+	width: 150px;
+}
+
+.cabeceraprincipal .menu
+{
+
+}
+
+.cabeceraprincipal .menu a
+{
+	color: #fff;
+	margin: 0 25px;
+}
+
+.seccion
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#banner
+{
+	/*background-color: #1DB954;*/
+	padding-bottom: 0;
+	padding-top: 0;
+	height: 100vh;
+	position: relative;
+	z-index: 1;	
+	color: #fff;
+}
+
+#banner .img-full
+{
+	/*opacity: 0.7;*/
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+#banner .container
+{
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+}
+
+#banner .container h1,
+#banner .container h3
+{
+	margin-top: 0;
+}
+
+#banner .container h1
+{
+    font-size: 90px;
+    margin-bottom: 20px;
+}
+
+#banner .container h3
+{
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+#porque
+{
+	background-color: #fff;
+}
+
+
+#porque h2
+{
+	text-align: center;
+	font-size: 45px;
+	font-weight: 800;
+	margin-bottom: 50px;
+}
+
+#porque i
+{
+	font-size: 100px;
+	margin-bottom: 25px;
+	color: #509bf5;
+}
+
+#porque h3
+{
+	font-size: 20px;
+	margin-bottom: 25px;
+}
+
+#porque i
+{
+	font-size: 100px;
+	margin-bottom: 25px;
+}
+
+
+.piesdepagina
+{
+	background-color: #000;
+	color: #888;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.piesdepagina .menufooter
+{
+	margin-top: 15px;
+}
+
+.piesdepagina .menufooter a
+{
+	color: #888;
+	margin-left: 15px;
+	margin-right: 15px;
+}
