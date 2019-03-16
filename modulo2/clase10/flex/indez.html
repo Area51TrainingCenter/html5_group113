@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="../css/normalize.css">
+	<style>
+		section{
+			height: 100vh;
+			background-color: grey;
+			/*justify-content: center flex-end flex-start space-evenly;*/
+			justify-content: center;
+			/*align-items: center flex-start flex-end stretch;*/
+			align-items: center;
+			align-content: center;
+			display: flex;
+			flex-wrap: wrap;
+		/*	flex-direction: column;*/
+		}
+
+		.cuadrado
+		{
+			flex-basis: 100px;
+			width: 100px;
+			height: 50px;
+			background-color: yellow;
+			border: 1px solid #000;
+			display: flex;
+			margin-bottom: 20px;
+			justify-content: center;
+			align-items: center;	
+			
+			  flex-grow: 1;
+			  flex-shrink: 1;
+			  flex-basis: 100px;	
+		}
+
+		.cuadrado.arriba
+		{
+
+			flex-shrink: 3;
+			/*order: 3;	*/
+			/*align-self: flex-start;*/
+		}
+
+		.cuadrado.abajo
+		{
+			
+			/*align-self: flex-end;*/
+		}		
+	</style>
+</head>
+<body>
+	<section>
+		<div class="cuadrado arriba">1</div>
+		<div class="cuadrado">2</div>
+		<div class="cuadrado abajo">3</div>
+	</section>
+</body>
+</html>
