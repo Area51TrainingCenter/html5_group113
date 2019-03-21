@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		:root{ 
+			background: #ff0000;
+			/********aqui podemos declarara variables que seranutilizadas con el metodo var()***********/
+		}
+
+	/*	ul li
+		{
+			background-color: grey;
+		}*/
+
+		ul li:first-child
+		{
+			background-color: red;
+		}
+
+		ul li:nth-child(2)
+		{
+			background-color: blue
+		}
+
+		ul li:last-child
+		{
+			background-color: green;
+		}
+
+		ul.otralista li:nth-child(odd)
+		{
+			background-color: black;
+			color: #fff;
+		}
+
+		ul.otralista li:nth-child(even)
+		{
+			background-color: yellow
+		}
+
+		ul.otralista li:nth-child(5n)
+		{
+			background-color: pink
+		}
+
+		div a:first-of-type
+		{
+			background-color: red;
+		}	
+
+		div a:last-of-type
+		{
+			background-color: grey;
+		}		
+	</style>
+</head>
+<body>
+	<div>
+		<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<a href="#">LINK</a>
+		<a href="#">LINK 2</a>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. </p>
+
+	</div>
+
+	<ul>
+		<li>inicio</li>
+		<li>nosotros</li>
+		<li>servicios</li>				
+		<li>servicios</li>	
+	</ul>
+
+	<ul class="otralista">
+		<li>inicio</li>
+		<li>nosotros</li>
+		<li>servicios</li>				
+		<li>servicios</li>	
+		<li>inicio</li>
+		<li>nosotros</li>
+		<li>servicios</li>				
+		<li>servicios</li>	
+		<li>inicio</li>
+		<li>nosotros</li>
+		<li>servicios</li>				
+		<li>servicios</li>	
+		<li>inicio</li>
+		<li>nosotros</li>
+		<li>servicios</li>				
+		<li>servicios</li>	
+		<li>inicio</li>
+		<li>nosotros</li>
+		<li>servicios</li>				
+		<li>servicios</li>	
+		<li>inicio</li>
+		<li>nosotros</li>
+		<li>servicios</li>				
+		<li>servicios</li>							
+	</ul>
+</body>
+</html>

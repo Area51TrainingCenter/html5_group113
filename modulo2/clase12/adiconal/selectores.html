@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		/*** elemento > elemento ***/
+		span
+		{
+			background-color: yellow;
+		}
+
+		div > span
+		{
+			background-color: red;
+		}
+
+		div + p
+		{
+			background-color: green;
+		}
+
+		div ~ ul
+		{
+			background-color: blue;
+		}
+
+		[type]
+		{
+			border:2px solid #000;
+		}
+
+
+		[type = "email"]
+		{
+			background-color: grey;
+		}
+
+		[class ~= "elemento"]
+		{
+			background-color: red;
+		}
+
+		[class |= "columna"]
+		{
+			background-color: pink;
+			height: 100px;
+			width: 100px;
+			margin-bottom: 10px;
+		}
+
+		div[class^="test"] {
+		  background: #ffff00;
+		}	
+
+		[href$=".html"]
+		{
+			font-size: 20px;
+		}
+
+		[class*="na-"]
+		{
+			font-size: 50px;
+		}	
+	</style>
+</head>
+<body>
+	<div>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in <span>reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. </span>Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+	</div>
+
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+
+	<ul>
+		<li>1</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+	</ul>
+
+	<input type="text" class="xixa elemento" name="nombre">
+	<input type="email" class="elementos" name="email">
+
+	<div class="columna-100">hola</div>
+	<div class="columna">Adios</div>
+
+	<div class="testtertertertert">The third div element.</div>
+	<div class="test">This is some text in a paragraph.</div>
+
+	<a href="index.php">Inicio</a>
+	<a href="index.html">Nosotros</a>
+</body>
+</html>
