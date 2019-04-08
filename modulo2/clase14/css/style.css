@@ -42,8 +42,14 @@
 	font-style: normal;	
 }
 
-*{
-	box-sizing: border-box;
+*, ::after, ::before {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+::-moz-selection {
+	background-color: #1DB954;
+	color: #fff;
 }
 
 ::selection {
@@ -86,9 +92,14 @@ a{
 
 .row
 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	margin-left: -15px;
 	margin-right: -15px;
 }
@@ -199,12 +210,12 @@ a{
 	background-color: #1DB954;
 	color: #fff;
 	text-transform: uppercase;
-	padding: 15px 30px;
-	border: none;
+	text-align: center;	
+	padding: 15px 20px;
 	font-weight: 700;
-	text-align: center;
 	border: 2px solid #1DB954;	
-	transition: all 0.3s ease-in;
+	transition: all .3s ease-in;
+	font-size: 15px;
 }
 
 .boton-blanco
@@ -271,10 +282,17 @@ a{
 
 .cabeceraprincipal .container
 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .cabeceraprincipal .logo .brand
@@ -343,8 +361,10 @@ a{
 	/*opacity: 0.7;*/
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
-	object-position: center;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	-o-object-position: center;
+	   object-position: center;
 }
 
 #banner .container
@@ -353,7 +373,9 @@ a{
     top: 50%;
     left: 0;
     right: 0;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 
 #banner .container h1,
@@ -471,8 +493,10 @@ a{
 {
 	height: 100%;
 	width: 100%;
-	object-fit: cover;
-	object-position: center;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	-o-object-position: center;
+	   object-position: center;
 	opacity: 0.25;
 	position: absolute;
 	left: 0;
@@ -676,7 +700,8 @@ a{
 
 #planes .lista 
 {
-	column-count: 2;
+	-webkit-column-count: 2;
+	        column-count: 2;
 	cursor: pointer;
 }
 
@@ -741,6 +766,9 @@ a{
 
 #artistas{
    /* background-color: #2d46ba;*/
+    background-image:  -webkit-gradient(linear ,right bottom, left top ,from(#1DB954), to(rgba(45,70,186,.5))),url(../img/imagen1.jpg);
+    background-image:  -webkit-linear-gradient(bottom right ,#1DB954, rgba(45,70,186,.5)),url(../img/imagen1.jpg);
+    background-image:  -o-linear-gradient(bottom right ,#1DB954, rgba(45,70,186,.5)),url(../img/imagen1.jpg);
     background-image:  linear-gradient(to top left ,#1DB954, rgba(45,70,186,.5)),url(../img/imagen1.jpg);
   	background-attachment: fixed;
 
@@ -781,8 +809,10 @@ a{
 {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
-	object-position: center;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	-o-object-position: center;
+	   object-position: center;
 }
 
 #artistas p
@@ -794,7 +824,8 @@ a{
 
 .sombra
 {
-    box-shadow: 0px 0px 20px 0px #ccc;
+    -webkit-box-shadow: 0px 0px 20px 0px #ccc;
+            box-shadow: 0px 0px 20px 0px #ccc;
 }
 
 #galeria .columna
@@ -839,18 +870,26 @@ a{
 	top:0;
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
-	object-position: center;
-	filter: grayscale(0);
+	-o-object-fit: cover;
+	   object-fit: cover;
+	-o-object-position: center;
+	   object-position: center;
+	-webkit-filter: grayscale(0);
+	        filter: grayscale(0);
+	-webkit-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
 	transition: all .3s ease-in;
 	opacity: 1;
 }
 
 #galeria .cuadrado:hover .imagen-galeria
 {
-	filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	        filter: grayscale(1);
 	opacity: 0.25;
-	transform: scale(1.5) rotate(-15deg);	
+	-webkit-transform: scale(1.5) rotate(-15deg);
+	    -ms-transform: scale(1.5) rotate(-15deg);
+	        transform: scale(1.5) rotate(-15deg);	
 }
 
 .bloque-galeria
@@ -863,9 +902,13 @@ a{
 
 /*	left: 50%;
 	transform: translate(-50%,-50%);*/
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
 	left: 10%;
 	right: 10%;
+	-webkit-transition: all .8s cubic-bezier(.9,.12,.25,.18) ;
+	-o-transition: all .8s cubic-bezier(.9,.12,.25,.18) ;
 	transition: all .8s cubic-bezier(.9,.12,.25,.18) ;
 }
 
@@ -902,10 +945,18 @@ a{
 	position: fixed;
 	right: 0;
 	top: 50%;
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
 .xixa .icono-redes.icono-fb
@@ -931,28 +982,44 @@ a{
 	display: inline-block;
 	width: 50px;
 	height: 50px;
-	filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	        filter: grayscale(1);
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-transition: all .4s ease-in;
+	-o-transition: all .4s ease-in;
 	transition: all .4s ease-in;
 }
 
 .xixa .icono-redes i
 {
 	display: inline-block;
-	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	        transform: rotate(90deg);
+	-webkit-transition: all .4s ease-in;
+	-o-transition: all .4s ease-in;
 	transition: all .4s ease-in;
 }
 
 .xixa .icono-redes:hover
 {
-	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+	        filter: grayscale(0);
 }
 
 .xixa .icono-redes:hover i
 {
-	transform: rotate(0deg) scale(1.5);
+	-webkit-transform: rotate(0deg) scale(1.5);
+	    -ms-transform: rotate(0deg) scale(1.5);
+	        transform: rotate(0deg) scale(1.5);
 }
 
 /*****************Desktop**************************/
@@ -984,7 +1051,9 @@ a{
 
 	.cabeceraprincipal .container
 	{
-		justify-content: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 	}
 
 	.cabeceraprincipal .logo
@@ -994,11 +1063,19 @@ a{
 
 	.cabeceraprincipal .menu {
 		width: 100%;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		align-content: center;
-		flex-wrap: wrap;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-ms-flex-line-pack: center;
+		    align-content: center;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
 	}
 
 	.cabeceraprincipal .menu a
@@ -1150,9 +1227,16 @@ a{
 		top: 0;
 		left: 0;
 		padding: 40px 15px;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 
 	.cabeceraprincipal .menu a
