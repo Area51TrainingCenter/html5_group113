@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		*{
+			-webkit-box-sizing: border-box;
+			        box-sizing: border-box;
+		}
+
+		body
+		{
+			padding: 0;
+			margin: 0;
+		}
+
+		.cuadrado
+		{
+			width: 50px;
+			height: 50px;
+			background-color: red;
+			border: 1px solid green;
+			margin-bottom: 15px;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+			-webkit-box-align: center;
+			    -ms-flex-align: center;
+			        align-items: center;
+			color: #fff;
+			font-size: 20px;
+		}
+
+		section
+		{
+			height: 100vh;
+			background-color: #ddd;
+			position: relative;
+		}
+
+		section.banner
+		{
+			background-color: red;
+		}
+
+		section.banner.banner-verde
+		{
+			background-color: green;
+		}
+
+		header .menu-principaal,
+		.menu-secundario
+		{
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: justify;
+			    -ms-flex-pack: justify;
+			        justify-content: space-between;
+			-webkit-box-align: center;
+			    -ms-flex-align: center;
+			        align-items: center;
+			padding: 15px;
+			background-color: blue;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 2;
+		}
+
+		.menu-secundario{
+			bottom: 0;
+			top: auto;
+			background-color: #000;
+			-webkit-transition: all .3s ease-in;
+			-o-transition: all .3s ease-in;
+			transition: all .3s ease-in;
+		}
+
+		.menu-secundario.seguirme
+		{
+			bottom: auto;
+			top: 0;
+			position: fixed;
+		}
+
+		.menu-secundario.bajando
+		{
+			-webkit-transform: translateY(-100%);
+			    -ms-transform: translateY(-100%);
+			        transform: translateY(-100%);
+		}
+	
+
+		header .menu-principaal a,
+		.menu-secundario a
+		{
+			color: #fff;
+			text-transform: uppercase;
+		}	
+
+		.subir
+		{
+			position: fixed;
+			bottom: 100px;
+			right: 100px;
+			border-radius: 100%;
+			width: 40px;
+			height: 40px;
+			background-color: #fff;
+			color: red;
+			text-decoration: none;
+			display: none;
+			opacity: 0;
+			transition: all .5s ease-in;			
+		}	
+
+		.subir.abierto
+		{
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+			-webkit-box-align: center;
+			    -ms-flex-align: center;
+			        align-items: center;
+			opacity: 1;
+
+		}	
+	</style>
+</head>
+<body>
+	<header>
+		<nav class="menu-principaal">
+			<a href="#">Inicio</a>
+			<a href="#">Producto</a>
+			<a href="#">Servicio</a>
+		</nav>
+	</header>
+	<section class="principal">
+		<nav class="menu-secundario">
+			<a href="#">Inicio</a>
+			<a href="#">Producto</a>
+			<a href="#">Servicio</a>
+		</nav>
+	</section>
+	<section class="banner">
+
+	</section>
+	<section class="banner banner-verde">
+
+	</section>
+	<a href="#" class="subir">A</a>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui.js"></script>	
+	<script src="js/funciones.js"></script>	
+</body>
+</html>
